@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavascriptTable</title>
+
+    <script type="text/javascript">
+
+        function createTable(fName, lName, uAge, uAddress) {
+
+            document.write(
+                "<table cellpadding='15'" +
+                       "border = '1'" +
+                       "align = 'center'" +
+                       "dir = 'rtl' >" +
+                    "<tr>" +
+                        "<th>שם פרטי</th>" +
+                        "<th>שם משפחה</th>" +
+                        "<th>גיל</th>" + 
+                        "<th>כתובת</th>" +
+                    "</tr>" +
+                    "<tr>" +
+                        "<td style='background-color:cornflowerblue'>" +
+                            fName +
+                        "</td>" +
+                        "<td style='background-color: yellow'>" +
+                            lName +
+                        "</td >" + 
+                        "<td style='background-color: green'>" +
+                            uAge +
+                        "</td >" + 
+                        "<td style='background-color: red'>" +
+                            uAddress +
+                        "</td>" + 
+                    "</tr>" +
+                "</table > "
+            )
+
+        }
+
+        var fName = prompt("Enter your first name please:");
+        var lName = prompt("Enter your last name please:");
+        var uAge = prompt("Enter your age please:");
+        var uAddress = prompt("Enter your address please:");
+
+        createTable(fName, lName, uAge, uAddress)
+
+    </script>
+</head>
+<body>
+
+ 
+</body>
+</html>
